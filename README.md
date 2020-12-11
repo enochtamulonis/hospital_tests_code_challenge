@@ -12,7 +12,11 @@ The setups steps expect following tools installed on the system.
 ```bash
 git clone https://github.com/yunggindigo/hospital_tests_code_challenge.git
 ```
+##### 2. Install Yarn files for tailwindcss
 
+```bash
+yarn install --check-files
+```
 ##### 2. Create the database
 
 Run the following commands to create and setup the database.
