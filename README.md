@@ -17,7 +17,7 @@ git clone https://github.com/yunggindigo/hospital_tests_code_challenge.git
 ```bash
 yarn install --check-files
 ```
-##### 2. Create the database
+##### 3. Create the database
 
 Run the following commands to create and setup the database.
 
@@ -25,7 +25,7 @@ Run the following commands to create and setup the database.
 rails db:create
 ```
 
-##### 3. Start the Rails server
+##### 4. Start the Rails server
 
 You can start the rails server using the command given below.
 
