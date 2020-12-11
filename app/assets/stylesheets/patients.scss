@@ -1,0 +1,16 @@
+// Place all the styles related to the patients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* STYLING FORM*/
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.result-select select {
+  width: 19.2rem;
+  height: 3rem;
+  background: white;
+}

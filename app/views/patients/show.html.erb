@@ -1,0 +1,27 @@
+<div class="w-full h-screen flex flex-col">
+  <h2 class="text-3xl text-center py-6"> Patient Info </h2>
+  <div class="w-3/4 h-screen bg-gray-200 mx-auto flex flex-col p-4">
+    <div class="w-full min-h-10 flex justify-end">
+      <a class="text-xl px-6 py-1 border-2 border-black" href="<%= edit_patient_path @patient %>"> Edit </a>
+    </div>
+    <div class="py-4 flex justify-between">
+      <h3 class="text-2xl"> Name: <%= @patient.name %> </h3>
+      <h3 class="text-2xl"> Email: <%= @patient.email %> </h3>
+    </div>
+    <div class="flex justify-between">
+      <h3 class="text-2xl"> Date Of Birth: <%= @patient.dob %> </h3>
+      <h3 class="text-2xl"> Blood Group: <%= @patient.blood_group %> </h3>
+    </div>
+    <div class=" py-4 flex justify-between">
+      <h3 class="text-2xl"> Test Date: <%= @patient.test_date %> </h3>
+      <h3 class="text-2xl"> Results: <%= @patient.result %> </h3>
+    </div>
+    <div class="pb-2 flex justify-between">
+      <h3 class="text-2xl"> Staff that took test: <%= @patient.staff_that_took_test %> </h3>
+    </div>
+    <div class="w-full px-2">
+      <h3 class="text-2xl text-center py-4"> Inference From Test</h3>
+      <p class="text-lg text-center"><%= @patient.inference_from_test %></p>
+    </div>
+  </div>
+</div>

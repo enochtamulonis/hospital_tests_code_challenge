@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_name %> Hospital App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="site-content-container">
+      <%= render 'layouts/top_section' %>
+      <%= render 'layouts/navbar' %>
+      <%= render 'layouts/alerts' %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

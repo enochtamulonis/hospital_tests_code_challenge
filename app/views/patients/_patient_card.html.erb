@@ -1,0 +1,12 @@
+<div class="w-full min-h-10 bg-gray-200 py-4">
+  <ul class="w-full h-full flex justify-between text-black text-lg px-4">
+    <li class="flex w-1/2 justify-between">
+      <h4 class="w-1/3"> <%= patient.name %> </h4>
+      <h4  class="w-1/3"> <%= patient.test_date %> </h4>
+      <div class="w-1/3 ml-4 px-2 rounded-sm border-2 border-black"> <%= patient.result %> </div>
+    </li>
+    <li class="flex">
+      <a href="<%= patient_path(patient) %>" class="px-4 border-2 border-blue-500 text-blue-500">View all info</a>
+    </li>
+  </ul>
+</div>

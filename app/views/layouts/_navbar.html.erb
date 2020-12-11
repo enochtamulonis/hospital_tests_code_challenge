@@ -1,0 +1,13 @@
+<nav class="w-full min-h-10 py-4 bg-red-500">
+  <ul class="h-full w-full flex justify-between px-4">
+    <li class="text-white">
+      <a class="text-2xl" href="<%= root_path %>"> Home </a>
+      <a class="text-xl" href="<%= patients_path %>"> Patients </a>
+    </li>
+    <% if current_user %>
+      <li class="text-2xl text-white">
+        <a href="<%= new_patient_path %>"> Add Patient </a>
+      </li>
+    <% end %>
+  </ul>
+</nav>

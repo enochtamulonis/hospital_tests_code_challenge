@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p> Hello <%= @patient.name %></p>
+    <p>These are the results from your covid test </p>
+    <p>
+    Results<br>
+    --------------------------
+    </p>
+    <p><%= @patient.result %></p>
+    <p>
+    Doctors Inference<br>
+    --------------------------
+    </p>
+    <p> <%= @patient.inference_from_test %></p>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<%= form_with(model: patient, local: true) do |form| %>
+  <% if patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+        <% patient.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, :class => "pl-1 py-1" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.email_field :email, :class => "pl-1 py-1"  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blood_group %>
+    <%= form.text_field :blood_group, :class => "pl-1 py-1" %>
+  </div>
+
+  <div class="field">
+    <div class="flex py-2">
+      <%= form.label :date_of_birth %><p class="pl-2">(MM/DD/YYYY) </p>
+    </div>
+    <%= form.text_field :dob, :class => "py-1 pl-1"%>
+  </div>
+
+  <div class="field">
+    <div class="flex py-2">
+      <%= form.label :test_date %><p class="pl-2">(MM/DD/YYYY) </p>
+    </div>
+    <%= form.text_field :test_date, :class => "py-1 pl-1"%>
+  </div>
+
+  <div class="field py-2">
+    <%= form.label :result, :class => "py-2" %>
+    <div class="result-select">
+      <%= form.select :result, options_for_select([['Positive', "Positive"], ['Negative', "Negative"]]) %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= form.label :inference_from_test %>
+    <%= form.text_area :inference_from_test, :class => "pl-1 py-1" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staff_that_took_test %>
+    <%= form.text_field :staff_that_took_test, :class => "pl-1 py-2" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit :class => "cursor-pointer bg-transparent px-6 py-2 border-2 border-blue-500 text-blue-500 mt-4" %>
+  </div>
+<% end %>

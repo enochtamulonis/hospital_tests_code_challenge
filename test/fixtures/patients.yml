@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dob: MyString
+  email: MyString
+  blood_group: MyString
+  test_date: MyString
+  result: MyString
+  inference_from_test: MyText
+  staff_that_took_test: MyString
+
+two:
+  name: MyString
+  dob: MyString
+  email: MyString
+  blood_group: MyString
+  test_date: MyString
+  result: MyString
+  inference_from_test: MyText
+  staff_that_took_test: MyString
