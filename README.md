@@ -5,31 +5,23 @@ The setups steps expect following tools installed on the system.
 - Github
 - Ruby [2.7.1]
 - Rails [6.0.3.4]
+- Postgresql
 
 ##### 1. Check out the repository
 
 ```bash
-git clone git@github.com:organization/project-name.git
+git clone https://github.com/yunggindigo/hospital_tests_code_challenge.git
 ```
 
-##### 2. Create database.yml file
-
-Copy the sample database.yml file and edit the database configuration as required.
-
-```bash
-cp config/database.yml.sample config/database.yml
-```
-
-##### 3. Create and setup the database
+##### 2. Create the database
 
 Run the following commands to create and setup the database.
 
 ```ruby
-bundle exec rake db:create
-bundle exec rake db:setup
+rails db:create
 ```
 
-##### 4. Start the Rails server
+##### 3. Start the Rails server
 
 You can start the rails server using the command given below.
 
